@@ -1,14 +1,110 @@
-body{
+/* ====================== Style 1 ===================== */
+
+body[data-style="style1"]{
   margin:0; height:100vh; display:grid; place-items:center;
   font-family: system-ui, Arial, sans-serif; /*background:#f6f7fb;*/
-  background-image: url("images/hearts.jpg");
+  background-image: url("images/hearts2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
 }
-.arena{
+body[data-style="style1"] .arena{
+  width:92vw;
+  height:92vh;
+  position:relative;
+  background:rgba(255,0,0,0.2);
+  border: None; /*2px dashed #aaa; */
+  border-radius:16px;
+  overflow:hidden;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+body[data-style="style1"] .question {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+
+  margin: 0;
+  text-align: center;
+  /* font-family: "Dancing Script", cursive; */
+  font-family: "Great Vibes", cursive;
+  word-spacing: 8px;
+  font-size: 72px;
+  font-weight: bold;
+  font-style: italic;
+  /* color: pink; */
+  color: red;
+}
+
+body[data-style="style1"] .statement {
+  position: relative;
+  margin: 0;
+  text-align: center;
+  font-size: 48px;
+  color: gray;
+}
+
+body[data-style="style1"] .actions{
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14px;
+}
+
+body[data-style="style1"] .btn{
+  display: inline-block;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 999px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none; /* so <a> looks like a button */
+  color: pink;
+  /* color: inherit; */
+  /* background: #f55d5d; */
+  background: linear-gradient(180deg, rgba(255, 0, 0, 0.75), rgba(255, 0, 10, 0.50));
+  border: 1px solid rgba(255,0,0,0.45);
+}
+
+body[data-style="style1"] .btn:hover{
+  transform: translateY(0px) scale(1.03);
+  filter: brightness(1.05);
+  outline: 3px solid rgba(255, 0, 120, 0.5);
+  outline-offset: 3px;
+}
+
+
+body[data-style="style1"] .btn:active{
+  transform: translateY(0px) scale(0.98);
+  filter: brightness(0.98);
+}
+
+body[data-style="style1"] .btn:focus-visible{
+  outline: 3px solid rgba(255, 0, 120, 0.5);
+  outline-offset: 3px;
+}
+
+
+
+/* ====================== Style 2 ===================== */
+
+body[data-style="style2"]{
+  margin:0; height:100vh; display:grid; place-items:center;
+  font-family: system-ui, Arial, sans-serif; /*background:#f6f7fb;*/
+  background-image: url("images/hearts.jpg");
+  background-size: cover;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body[data-style="style2"] .arena{
   width:92vw;
   height:92vh;
   position:relative;
@@ -17,12 +113,71 @@ body{
   border-radius:16px;
   overflow:hidden;
 }
-#btn{
-  position:absolute;
-  padding:12px 18px;
-  border:0;
-  border-radius:999px;
-  font-size:16px;
-  cursor:pointer;
-  user-select:none;
+
+body[data-style="style2"] .question {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+
+  margin: 0;
+  text-align: center;
+  /* font-family: "Dancing Script", cursive; */
+  font-family: "Great Vibes", cursive;
+  word-spacing: 10px;
+  font-size: 84px;
+  font-weight: bold;
+  /* font-style: italic; */
+  /* color: #f8738e; */
+  color: rgb(37, 0, 0)
+}
+
+body[data-style="style2"] .statement {
+  position: relative;
+  margin: 0;
+  text-align: center;
+  font-size: 48px;
+  color: gray;
+}
+
+body[data-style="style2"] .actions{
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14px;
+}
+
+body[data-style="style2"] .btn{
+  display: inline-block;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 999px;
+  /* font-family: "Dancing Script", cursive; */
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none; /* so <a> looks like a button */
+  /* color: inherit; #f39396 */
+  color: rgb(37, 0, 0);
+  background: linear-gradient(135deg, rgba(128, 0, 0, 0.85), rgba(216, 15, 15, 0.596));
+  border: 2px solid rgba(243, 75, 75, 0.733); 
+}
+
+body[data-style="style2"] .btn:hover{
+  transform: translateY(0px) scale(1.03);
+  filter: brightness(1.1);
+  outline: 3px solid rgba(248, 23, 23, 0.5);
+  /* outline-offset: 3px; */
+}
+
+
+body[data-style="style2"] .btn:active{
+  transform: translateY(0px) scale(0.98);
+  filter: brightness(0.98);
+}
+
+body[data-style="style2"] .btn:focus-visible{
+  outline: 3px solid rgba(248, 23, 23, 0.5);
 }
