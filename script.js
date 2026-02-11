@@ -271,11 +271,11 @@ window.addEventListener("load", () => {
 
 /* ====================== page linking ===================== */
 
-const style = document.body.dataset.style;
+// const style = document.body.dataset.style;
 
-const links = {
-    style1: "yes_page_1.html",
-    style2: "yes_page_2.html"
-}
+// const links = {
+//     style1: "yes_page_2.html",
+//     style2: "yes_page_2.html"
+// }
 
-yesBtn.href = links[style] ?? "yes_page_2.html"
+// yesBtn.href = links[style] ?? "yes_page_2.html"

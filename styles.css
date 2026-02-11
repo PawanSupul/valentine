@@ -120,6 +120,8 @@ body[data-style="style2"] .question {
   top: 40%;
   transform: translate(-50%, -50%);
 
+  width: min(80vw, 900px);
+
   margin: 0;
   text-align: center;
   /* font-family: "Dancing Script", cursive; */
