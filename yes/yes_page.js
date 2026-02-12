@@ -87,7 +87,7 @@ function spawnPic(){
   floatPics.appendChild(img);
 
   // Cleanup
-  setTimeout(() => img.remove(), (dur + 1) * 1000);
+  setTimeout(() => img.remove(), (dur) * 1000);
 }
 
 // Spawn a “couple” randomly: ~1 every 1.2s (tweak this)
