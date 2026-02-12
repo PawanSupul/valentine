@@ -127,7 +127,8 @@ body[data-style="style2"] .question {
   /* font-family: "Dancing Script", cursive; */
   font-family: "Great Vibes", cursive;
   word-spacing: 10px;
-  font-size: 84px;
+  /* font-size: 84px; */
+  font-size: clamp(60px, 12vw, 84px);
   font-weight: bold;
   /* font-style: italic; */
   /* color: #f8738e; */
@@ -183,3 +184,5 @@ body[data-style="style2"] .btn:active{
 body[data-style="style2"] .btn:focus-visible{
   outline: 3px solid rgba(248, 23, 23, 0.5);
 }
+
+
