@@ -9,7 +9,7 @@ const noBtn = document.getElementById("noBtn");
 const repelRadius = 160;            // triggers when cursor this close to NO
 const jumpMin = 420;                 // min distance for new target
 const jumpMax = 1180;                // max distance for new target
-const retargetCooldownMs = 50;     // prevents target spam
+const retargetCooldownMs = 1150;     // prevents target spam
 
 const easeFar = 0.06;               // slow drift when far
 const easeNear = 0.20;              // faster glide when close
@@ -235,9 +235,8 @@ function pickNearbyTargetAwayFromMouse() {
 
 // Optional: if they somehow click NO
 noBtn.addEventListener("click", (e) => {
-//   noBtn.textContent = "😅";
     e.preventDefault();
-    location.reload();
+    window.location.href = "no/no.html"
 });
 
 function animate() {
